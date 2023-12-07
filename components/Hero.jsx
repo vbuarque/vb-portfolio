@@ -4,8 +4,8 @@ import { Download, Send } from "lucide-react";
 
 import {
   RiBriefcase4Fill,
-  RiTeamFiU,
-  RiTodoFi11,
+  RiTeamFill,
+  RiTodoFill,
   RiArrowDownSLine,
 } from "react-icons/ri";
 
@@ -16,7 +16,7 @@ import Socials from "./Socials";
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[80vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom dark:bg-none">
+    <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/* text */}
@@ -40,7 +40,11 @@ const Hero = () => {
                 Download CV <Download size={18} />
               </Button>
             </div>
+            {/* socials */}
+            <Socials />
           </div>
+          {/* image */}
+          <div className="flex justify-center items-center"></div>
           {/* image */}
           <div className="hidden xl:flex relative">image</div>
         </div>
