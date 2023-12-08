@@ -265,6 +265,7 @@ const About = () => {
                     </div>
                   </div>
                 </TabsContent>
+                {/* skills */}
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
                     <h3 className="h3 mb-8">
