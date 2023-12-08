@@ -22,12 +22,14 @@ const Hero = () => {
           {/* text */}
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
-              Desenvolvedor Web
+              Desenvolvedor Web/Mobile
             </div>
             <h1 className="h1 mb-4">Olá, meu nome é Vinicius Buarque</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              Breve descrição com alguns insights sobre mim, minha jornada de
-              vocação e sobre oque estou engajando profisionalmente
+              Formado em Desenvolvimento de Software Multiplataforma e Técnico
+              de Informática, sou um desenvolvedor front-end com foco em ReactJS
+              e React Native 👨🏻‍💻. Buscando sempre os melhores layouts para o seu
+              projeto 😁.
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
@@ -36,9 +38,11 @@ const Hero = () => {
                   Entre em contato <Send size={18} />
                 </Button>
               </Link>
-              <Button variant="secondary" className="gap-x-2">
-                Download CV <Download size={18} />
-              </Button>
+              <Link href="/about/ViniciusBuarqueCV.pdf" download="ViniciusBuarqueCV.pdf" target="_blank">
+                <Button variant="secondary" className="gap-x-2" Download=''>
+                  Download CV <Download size={18} />
+                </Button>
+              </Link>
             </div>
             {/* socials */}
             <Socials
@@ -53,23 +57,23 @@ const Hero = () => {
               containerStyles="absolute top-[24%] -left-[5rem]"
               icon={<RiBriefcase4Fill />}
               endCountNum={3}
-              badgeText="Years Of Experience"
+              badgeText="Anos de experiência"
             />
-             {/* badge 2 */}
-             <Badge
+            {/* badge 2 */}
+            {/* <Badge
               containerStyles="absolute top-[80%] -left-[1rem]"
               icon={<RiTodoFill />}
-              endCountNum={6}
-              endCountText='k'
-              badgeText="Finished Projects"
-            />
-              {/* badge 3 */}
-              <Badge
+              endCountNum={15}
+              endCountText="+"
+              badgeText="Projetos finalizados"
+            /> */}
+            {/* badge 3 */}
+            <Badge
               containerStyles="absolute top-[55%] -right-8"
-              icon={<RiTeamFill />}
-              endCountNum={9}
-              endCountText='k'
-              badgeText="Happy Clients"
+              icon={<RiTodoFill />}
+              endCountNum={15}
+              endCountText="+"
+              badgeText="Projetos finalizados"
             />
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
             <DevImg
