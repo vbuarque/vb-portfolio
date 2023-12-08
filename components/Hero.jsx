@@ -16,7 +16,7 @@ import Socials from "./Socials";
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
+    <section className="py-5 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/* text */}
@@ -26,10 +26,8 @@ const Hero = () => {
             </div>
             <h1 className="h1 mb-4">Olá, meu nome é Vinicius Buarque</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              Formado em Desenvolvimento de Software Multiplataforma e Técnico
-              de Informática, sou um desenvolvedor front-end com foco em ReactJS
-              e React Native 👨🏻‍💻. Buscando sempre os melhores layouts para o seu
-              projeto 😁.
+              Formado em Desenvolvimento de Software Multiplataforma, sou um desenvolvedor front-end com foco em ReactJS
+              e React Native 👨🏻‍💻.
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
