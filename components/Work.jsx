@@ -54,7 +54,7 @@ const projectData = [
   },
   {
     image: "/work/ProManager.png",
-    category: "fatec",
+    category: "fatec - API - Aprendizagem Projetos Integradores",
     name: "Pro Manager 📊",
     description:
       "Aplicação web de CRM, realizado no 3° semestre de DSM - Fatec.",
@@ -62,7 +62,7 @@ const projectData = [
   },
   {
     image: "/work/Conveccao.png",
-    category: "fatec",
+    category: "fatec - API - Aprendizagem Projetos Integradores",
     name: "Convecção 🌡️",
     description:
       "Aplicação web de CRM, realizado no 4° semestre de DSM - Fatec.",
@@ -70,7 +70,7 @@ const projectData = [
   },
   {
     image: "/work/ForDevs.png",
-    category: "fatec",
+    category: "fatec - API - Aprendizagem Projetos Integradores",
     name: "ForDevs 🤖",
     description:
       "Aplicação web de Classificador de Temas PLN, realizado no 6° semestre de DSM - Fatec.",

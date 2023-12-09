@@ -46,27 +46,30 @@ const projectData = [
   },
   {
     image: "/work/ProManager.png",
-    category: "fatec",
+    category: "fatec - API",
     name: "Pro Manager 📊",
     description:
       "Aplicação web de CRM, realizado no 3° semestre de DSM - Fatec.",
     github: "https://github.com/vbuarque/Rocketseat-DevLinks",
+    api: "API - Aprendizagem Projetos Integradores",
   },
   {
     image: "/work/Conveccao.png",
-    category: "fatec",
+    category: "fatec - API",
     name: "Convecção 🌡️",
     description:
       "Aplicação web de CRM, realizado no 4° semestre de DSM - Fatec.",
     github: "https://github.com/Conveccao/conveccao-documentacao",
+    api: "API - Aprendizagem Projetos Integradores",
   },
   {
     image: "/work/ForDevs.png",
-    category: "fatec",
+    category: "fatec - API",
     name: "ForDevs 🤖",
     description:
       "Aplicação web de Classificador de Temas PLN, realizado no 6° semestre de DSM - Fatec.",
     github: "https://github.com/ForDevs-Fatec/Documentation",
+    api: "API - Aprendizagem Projetos Integradores",
   },
 ];
 
@@ -80,9 +83,7 @@ const Projects = () => {
   const [category, setCategory] = useState("todos");
 
   const filteredProjects = projectData.filter((project) => {
-    return category === "todos"
-      ? project
-      : project.category === category;
+    return category === "todos" ? project : project.category === category;
   });
 
   return (
@@ -107,12 +108,22 @@ const Projects = () => {
               );
             })}
           </TabsList>
-
+          {category === "fatec - API" ? (
+            <>
+              <p className="subtitle mb-8 text-center xl:text-left">
+                API - Aprendizagem por Projetos Integradores.
+              </p>
+            </>
+          ) : (
+            <></>
+          )}
           <div className="text-lg xl:mt-8 grid grid-cols-1 lg:grid-cols-3 gap-4">
             {filteredProjects.map((project, index) => {
-              return <TabsContent value={category} key={index}>
-                <ProjectCard project={project}/>
-              </TabsContent>
+              return (
+                <TabsContent value={category} key={index}>
+                  <ProjectCard project={project} />
+                </TabsContent>
+              );
             })}
           </div>
         </Tabs>
