@@ -105,8 +105,7 @@ const Work = () => {
             modules={[Pagination]}
             pagination={{ clickable: true }}
           >
-            {projectData.map((project, index) => {
-              // slice(0, 4)
+            {projectData.slice(0, 4).map((project, index) => {
               return (
                 <SwiperSlide key={index}>
                   <ProjectCard project={project} />
