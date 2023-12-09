@@ -25,7 +25,7 @@ const projectData = [
     category: "next js",
     name: "Meu portifólio pessoal 👨🏻‍💻",
     description:
-      "Aplicação web para apresentar meus projetos e experiências profissionais.",
+      "Portifolio para apresentar meus projetos e experiências profissionais.",
     github: "https://github.com/vbuarque/vb-portfolio",
   },
   {
@@ -33,7 +33,7 @@ const projectData = [
     category: "react js",
     name: "Secret Cristimas 🎅",
     description:
-      "Aplicação web para gerenciar o sorteio de amigo secreto entre amigos e familiares.",
+      "Gerenciamento de sorteio de amigo secreto entre amigos e familiares.",
     github: "https://github.com/vbuarque/e-condos-secret-cristimas",
   },
   {
@@ -41,35 +41,56 @@ const projectData = [
     category: "html e css",
     name: "Dev Links 🔗",
     description:
-      "Aplicação web para agregar links para usar como cartão de visitas online.",
+      "Agregador de links para usar como cartão de visitas online.",
     github: "https://github.com/vbuarque/Rocketseat-DevLinks",
+  },
+  {
+    image: "/work/Vanguarda.png",
+    category: "fatec - API",
+    name: "Projeto Vanguarda 📺",
+    description:
+      "Visualizador de dados de eleitores (Empresa Vanguarda), realizado no 1° semestre de DSM - Fatec.",
+    github: "https://github.com/grupo-3dsm/repo_pi",
+  },
+  {
+    image: "/work/Sirius.png",
+    category: "fatec - API",
+    name: "Projeto Sirius 🛰️",
+    description:
+      "Visualizador de imagens de satelite (Empresa Visiona), realizado no 2° semestre de DSM - Fatec.",
+    github: "https://github.com/grupo-3dsm/Sirius-repoP.I",
+  },
+  {
+    image: "/work/GoodTicket.png",
+    category: "fatec - API",
+    name: "Good Ticket 🎫",
+    description:
+      "CRM inteligente (Empresa IACIT), realizado no 3° semestre de DSM - Fatec.",
+    github: "https://github.com/Grupo2-DSM/Api-3dsm-2022",
+  },
+  {
+    image: "/work/Conveccao.png",
+    category: "fatec - API",
+    name: "Convecção 🌎",
+    description:
+      "Analise ambiental a partir de sensores (Empresa Tecsus), realizado no 4° semestre de DSM - Fatec.",
+    github: "https://github.com/Conveccao/conveccao-documentacao",
   },
   {
     image: "/work/ProManager.png",
     category: "fatec - API",
     name: "Pro Manager 📊",
     description:
-      "Aplicação web de CRM, realizado no 3° semestre de DSM - Fatec.",
-    github: "https://github.com/vbuarque/Rocketseat-DevLinks",
-    api: "API - Aprendizagem Projetos Integradores",
-  },
-  {
-    image: "/work/Conveccao.png",
-    category: "fatec - API",
-    name: "Convecção 🌡️",
-    description:
-      "Aplicação web de CRM, realizado no 4° semestre de DSM - Fatec.",
-    github: "https://github.com/Conveccao/conveccao-documentacao",
-    api: "API - Aprendizagem Projetos Integradores",
+      "Gestão de negócios (Empresa Oracle), realizado no 5° semestre de DSM - Fatec.",
+    github: "https://github.com/ProManage-FatecSJC/pro-manager-documentation",
   },
   {
     image: "/work/ForDevs.png",
     category: "fatec - API",
     name: "ForDevs 🤖",
     description:
-      "Aplicação web de Classificador de Temas PLN, realizado no 6° semestre de DSM - Fatec.",
+      "Classificador de Temas IA/PLN (Empresa Dom Rock), realizado no 6° semestre de DSM - Fatec.",
     github: "https://github.com/ForDevs-Fatec/Documentation",
-    api: "API - Aprendizagem Projetos Integradores",
   },
 ];
 
