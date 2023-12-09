@@ -13,85 +13,68 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
-    image: "/work/3.png",
+    image: "/work/RocketHelp.png",
+    category: "react native",
+    name: "Rocket Help 🚀",
+    description:
+      "Aplicativo para dispositivos móveis com o objetivo de gerenciar aberturas de chamados.",
+    github: "https://github.com/vbuarque/ignitelab-rockethelp",
+  },
+  {
+    image: "/work/MiauCafe.png",
+    category: "react native",
+    name: "Miau Café 🐱",
+    description:
+      "Aplicativo para dispositivos móveis para gerenciar um cardápio online para uma cafeteria.",
+    github: "https://github.com/vbuarque/fatec-app-cafe",
+  },
+  {
+    image: "/work/MeuPortifolio.png",
+    category: "next js",
+    name: "Meu portifólio pessoal 👨🏻‍💻",
+    description:
+      "Aplicação web para apresentar meus projetos e experiências profissionais.",
+    github: "https://github.com/vbuarque/vb-portfolio",
+  },
+  {
+    image: "/work/SecretCristimas.png",
     category: "react js",
-    name: "Nexa Website",
+    name: "Secret Cristimas 🎅",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatem et consequatur eos iste dolor.",
-    link: "/",
-    github: "/",
+      "Aplicação web para gerenciar o sorteio de amigo secreto entre amigos e familiares.",
+    github: "https://github.com/vbuarque/e-condos-secret-cristimas",
   },
   {
-    image: "/work/4.png",
-    category: "react js",
-    name: "Solstice Website",
+    image: "/work/DevLinks.png",
+    category: "html e css",
+    name: "Dev Links 🔗",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatem et consequatur eos iste dolor.",
-    link: "/",
-    github: "/",
+      "Aplicação web para agregar links para usar como cartão de visitas online.",
+    github: "https://github.com/vbuarque/Rocketseat-DevLinks",
   },
   {
-    image: "/work/2.png",
-    category: "next js",
-    name: "Lumina Website",
+    image: "/work/ProManager.png",
+    category: "fatec",
+    name: "Pro Manager 📊",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatem et consequatur eos iste dolor.",
-    link: "/",
-    github: "/",
+      "Aplicação web de CRM, realizado no 3° semestre de DSM - Fatec.",
+    github: "https://github.com/vbuarque/Rocketseat-DevLinks",
   },
   {
-    image: "/work/1.png",
-    category: "next js",
-    name: "Evolve Website",
+    image: "/work/Conveccao.png",
+    category: "fatec",
+    name: "Convecção 🌡️",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatem et consequatur eos iste dolor.",
-    link: "/",
-    github: "/",
+      "Aplicação web de CRM, realizado no 4° semestre de DSM - Fatec.",
+    github: "https://github.com/Conveccao/conveccao-documentacao",
   },
   {
-    image: "/work/3.png",
-    category: "next js",
-    name: "Ignite Website",
+    image: "/work/ForDevs.png",
+    category: "fatec",
+    name: "ForDevs 🤖",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatem et consequatur eos iste dolor.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/4.png",
-    category: "next js",
-    name: "Envision Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatem et consequatur eos iste dolor.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/1.png",
-    category: "fullstack",
-    name: "Serenity Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatem et consequatur eos iste dolor.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/3.png",
-    category: "fullstack",
-    name: "Nova Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatem et consequatur eos iste dolor.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/2.png",
-    category: "fullstack",
-    name: "Zenith Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid voluptatem et consequatur eos iste dolor.",
-    link: "/",
-    github: "/",
+      "Aplicação web de Classificador de Temas PLN, realizado no 6° semestre de DSM - Fatec.",
+    github: "https://github.com/ForDevs-Fatec/Documentation",
   },
 ];
 
@@ -100,12 +83,12 @@ const Work = () => {
     <section className="relative mb-12 xl:mb-48">
       <div className="container mx-auto">
         <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
-          <h2 className="section-title mb-4">Latest Projects</h2>
+          <h2 className="section-title mb-4">Projetos mais recentes</h2>
           <p className="subtitle mb-8">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Alguns dos meus projetos mais recentes que trabalhei.
           </p>
           <Link href="/projects">
-            <Button>All Projects</Button>
+            <Button>Todos os projetos</Button>
           </Link>
         </div>
 
@@ -122,7 +105,8 @@ const Work = () => {
             modules={[Pagination]}
             pagination={{ clickable: true }}
           >
-            {projectData.slice(0, 4).map((project, index) => {
+            {projectData.map((project, index) => {
+              // slice(0, 4)
               return (
                 <SwiperSlide key={index}>
                   <ProjectCard project={project} />
